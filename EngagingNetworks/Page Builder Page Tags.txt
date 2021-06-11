@@ -1,0 +1,43 @@
+${page~name}
+
+	The name given to the page in the software
+
+${page~title}
+
+	The public title given to the page
+
+${page~notes}
+
+	Additional details about the page
+
+${page~number}
+
+	The unique numeric identifier of the page
+
+${event~title}
+
+	The title of the event
+
+${event~description}
+
+	The description of the event
+
+${page~clientRef1}
+
+	Custom reference field 1 value
+
+${page~clientRef2}
+
+	Custom reference field 2 value
+
+${page~clientRef3}
+
+	Custom reference field 3 value
+
+${page~clientRef4}
+
+	Custom reference field 4 value
+
+${page~clientRef5}
+
+	Custom reference field 5 value

@@ -1,0 +1,5 @@
+You can make test donations using this card:
+VISA
+4222222222222220
+Expiry = future
+cvv= 123

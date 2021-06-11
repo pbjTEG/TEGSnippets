@@ -1,0 +1,24 @@
+Recurring Intervals:
+MONTHLY, QUARTERLY, SEMI_ANNUAL and ANNUAL
+
+Payment Type = Visa
+Card Number = 4100200300011001
+Card Expiration = Any future date
+CVV Code = 463
+
+The following bank information can be used to test the Vantiv gateway.
+
+Payment Type = ACH
+Bank Account Type = Checking
+Bank Account Number = 1099999999
+Routing Number = 011075150
+
+Card Types:
+Visa = VI
+MasterCard = MC
+Amex = AX
+Discover = DI
+Diners = DC
+JCB = JC
+Paypal = PP
+eCheck = EC

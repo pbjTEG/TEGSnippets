@@ -1,0 +1,9 @@
+<convio:choose xmlns="http://www.convio.com">
+	<convio:when title="WYSIWYG Editor Visible" test="contains" selected="selected">
+		<convio:op><convio:session name="8"></convio:session></convio:op>
+		<convio:op>PageBuilderAdmin</convio:op>
+		<convio:then>
+			<h1 style="color: red; background: yellow; font-size: 20pt">Please do not edit this component in the WYSIWYG editor. This component contains HTML class attributes for advanced customization of the donation form.</h1>
+		</convio:then>
+	</convio:when>
+</convio:choose>

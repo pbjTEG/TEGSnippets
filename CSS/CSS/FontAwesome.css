@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "Fontawesome webfont";
+	font-style: normal;
+	font-weight: 400;
+	src: url("https://???/fontawesome-webfont.eot") format("embedded-opentype"),
+	url("https://???/fontawesome-webfont.ttf") format("woff"),
+	url("https://???/fontawesome-webfont.woff") format("truetype"),
+	url("https://???/fontawesome-webfont.svg") format("svg");
+}
+
+/*noinspection CssNoGenericFontName*/
+#pagePrevious.active,
+#pageNext.active,
+#pagePrevious.active:hover,
+#pageNext.active:hover {
+	background: transparent;
+	color: black;
+	cursor: pointer;
+	font-family: "Fontawesome webfont";
+	font-weight: normal;
+}
+
+#pagePrevious.active::before {
+	content: "\f190";
+}
+
+#pageNext.active::before {
+	content: "\f18e";
+}

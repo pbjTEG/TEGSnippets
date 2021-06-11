@@ -1,0 +1,28 @@
+To test the Authorization and Rejection responses related to a Charge, credit card number 4111111111111111 can be used.
+
+To test the Authorization responses related to both Charges and Refunds, credit card number 4222222222222220 can be used.
+
+The amounts and corresponding responses detailed below have been created for to test multiple situations:
+Amount 	Result when using 4111111111111111
+1.00 	OK: 678594
+2.00 	REJ: 15
+3.00 	OK: 678594
+4.00 	REJ: 15
+5.00 	REJ: 15
+6.00 	OK: 678594:X
+7.00 	OK: 678594:y
+8.00 	OK: 678594:A
+9.00 	OK: 678594:Z
+10.00 	OK: 678594:N
+15.00 	If CVV2 = 1234, the response is OK: 678594:Y. If no CVV2 is entered, the response is REJ: 19
+16.00 	REJ: 2
+17.00 	REJ: 22
+192.00 (NA Only) 	If sent via API (iATSLink or WebService)
+a) IP address is invalid format: Rej: 5.
+b) IP address is valid format: OK: 678594.
+All Other Amounts 	REJ: 15
+All Refund Amounts 	REJ: 15
+Amount 	Result when using 4222222222222220
+Any Sale Amount 	OK: 678594
+Any Refund Amount 	OK: 678594
+- See more at: http://home.iatspayments.com/developers/encrypted-swipe/testing#sthash.gkiD05f1.dpuf

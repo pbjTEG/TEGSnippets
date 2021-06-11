@@ -1,0 +1,38 @@
+<div id="progressMeter">[[S337:advocacy_alert:<alert id>:0:0:<goal amount>:<progress meter id>:#000000]]</div>
+<script>
+	YUI({
+		    modules: {
+			    jlib: {
+				    fullpath: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'
+			    },
+			    jnum: {
+				    fullpath: 'https://cdnjs.cloudflare.com/ajax/libs/df-number-format/2.1.6/jquery.number.min.js',
+				    requires: ['jlib']
+			    }
+		    }
+	    }).use('jlib', 'jnum', function(Y) {
+		jQuery(document).ready(function() {
+
+			// arrange progress meter
+			var alertsTaken = /Alerts Taken:\n(\d*)/.exec(jQuery('#progressMeter td').text())[1],
+			    alertGoal   = /Goal:\n(\d*)/.exec(jQuery('#progressMeter td').text())[1];
+			// @formatter:off
+			jQuery('#progressMeter')
+				.append(
+					'<div class="progress">' +
+						'<p class="goal">GOAL: <span id="goalValue">' + jQuery.number(alertGoal) + ' EMAILS</span></p>' +
+						'<div class="progressBack">' +
+							'<div class="progressFront">&nbsp;</div>' +
+							'<div class="progressAmount">Sent: ' + jQuery.number(alertsTaken) + '</div>' +
+						'</div>' +
+					'</div>'
+				);
+			// @formatter:on
+			jQuery('.progressFront')
+				.css({
+					     'width': (jQuery('div.progressBack').innerWidth() * (alertsTaken / alertGoal)) + 'px'
+				     });
+
+		}); // end jQuery(document).ready
+	}); // end Y.use("jquery-noconflict"...
+</script>

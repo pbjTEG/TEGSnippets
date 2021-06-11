@@ -1,0 +1,13 @@
+Title:                         {user_data~TITLE}
+First Name:                    {user_data~FIRST NAME}
+Middle Name:                   {user_data~MIDDLE NAME}
+Last Name:                     {user_data~LAST NAME}
+Email:                         {user_data~EMAIL ADDRESS}
+Street1:                       {user_data~ADDRESS LINE}
+City:                          {user_data~CITY}
+State/Province:                {user_data~STATE}
+Amount:                        {receipt_data~amount}
+Card Type:                     {receipt_data~paymentType}
+Expiration Date:               {receipt_data~expiry}
+This organization's tax ID is: 53-0167933
+Tracking Code:                 {receipt_data~txId}
