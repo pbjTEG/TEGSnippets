@@ -9,5 +9,5 @@ State/Province:                {user_data~STATE}
 Amount:                        {receipt_data~amount}
 Card Type:                     {receipt_data~paymentType}
 Expiration Date:               {receipt_data~expiry}
-This organization's tax ID is: 53-0167933
+This organization's tax ID is: nn-nnnnnnn
 Tracking Code:                 {receipt_data~txId}
