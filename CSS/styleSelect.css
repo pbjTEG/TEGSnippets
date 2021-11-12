@@ -1,14 +1,37 @@
-/* select elements */
-div.form-row div.form-content > select,
-#responsive_payment_typecc_exp_date_MONTH,
-#responsive_payment_typecc_exp_date_YEAR {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
+:root {
+	--body-background: white;
+	--text-foreground: black;
+}
 
-	background: white url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAICAYAAADJEc7MAAAAk0lEQVQYlYXOSw6DIBgAYe9/rX9B1PIQ4454DETATBemtTbazv5LpglhxpiBnDP/yjljzEAIM421HhHFQztSWm9RSisP7RBRWOtpSilYNyKi6HtziVNa6XuzIzdSSqEB+IWvELDDF3bDgWNciHF5Izcc6AQBat3wfkJE0XaattOIKLyfqHU77Z/gN75Dl/AT3yGAJ8/PpXikI/ZYAAAAAElFTkSuQmCC") no-repeat right 10px center;
-	color: #87888f;
-	padding: 0 30px 0 20px;
+.en__field__element.en__field__element--select::after,
+.en__field__element--splitselect .en__field__item::after {
+	background: var(--text-foreground);
+	clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+	content: " ";
+	display: block;
+	height: .7rem;
+	position: absolute;
+	right: .4rem;
+	top: calc(50% - .35rem);
+	width: .7rem;
+}
+
+select,
+.en__field__element .en__field__input--select,
+.en__field__item .en__field__input--splitselect {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: var(--body-background);
+	border: .12rem solid var(--text-foreground);
+	border-radius: .12rem;
+	color: var(--text-foreground);
+	font: normal 1rem "neue-haas-grotesk-display", "Arial", sans-serif;
+	height: 38px;
+	min-width: auto;
+	padding: 0 1rem 0 .16rem;
+	text-align: center;
+	width: 100%;
 }
 
 /* for IE */
