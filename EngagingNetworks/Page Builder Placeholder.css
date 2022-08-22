@@ -6,12 +6,18 @@ body#en__pagebuilder .en__component {
 	min-height: 2rem;
 }
 
-body#en__pagebuilder aside.pb-placeholder {
+/* Add a note for the user using an
+ * <?? class="pb-placeholder></aside> element. . .
+ *
+ * . . .visible in Page Builder. . .
+ */
+body#en__pagebuilder .pb-placeholder {
 	color: #888;
 	position: absolute;
 	font-size: .5rem;
 }
 
-body:not(#en__pagebuilder) aside.pb-placeholder {
+/*. . .and not on the live page. */
+body:not(#en__pagebuilder) .pb-placeholder {
 	display: none;
 }
