@@ -1,7 +1,7 @@
-body:not(#en__pagebuilder) aside.pb-placeholder{
+body:not(#en__pagebuilder) .pb-placeholder{
 	display: none;
 }
-body#en__pagebuilder aside.pb-placeholder{
+body#en__pagebuilder .pb-placeholder{
 	display: initial;
 	color: gray;
 	background: white;
