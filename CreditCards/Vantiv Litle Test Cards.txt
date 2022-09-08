@@ -6,6 +6,45 @@ Card Number = 4100200300011001
 Card Expiration = Any future date
 CVV Code = 463
 
+American Express 	343434343434343
+Cartes Bancaires 	5555555555554444
+Discover/ Diners 	6011000400000000
+JCB 	3528000700000000
+Maestro 	6759649826438453
+MasterCard 	5555555555554444, 5454545454545454 and 2221000000000009
+MasterCard Debit 	5163613613613613
+Visa 	4444333322221111, 4911830000000 and 4917610000000000
+Visa Debit 	4462030000000000 and 4917610000000000003
+Visa Electron (UK only) 	4917300800000000
+
+CVV
+[Left blank] 	riskFactors.risk : not_supplied
+riskFactors.type : cvc 	NOT SUPPLIED BY SHOPPER
+111 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	NOT SENT TO ACQUIRER
+222 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	NO RESPONSE FROM ACQUIRER
+333 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	NOT CHECKED BY ACQUIRER
+444 	riskFactors.risk : not_matched
+riskFactors.type : cvc 	FAILED
+555 	No riskFactors returned 	APPROVED
+
+AMEX CVC
+[Left blank] 	riskFactors.risk : not_supplied
+riskFactors.type : cvc 	NOT SUPPLIED BY SHOPPER
+1111 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	NOT SENT TO ACQUIRER
+2222 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	NO RESPONSE FROM ACQUIRER
+3333 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	NOT CHECKED BY ACQUIRER
+4444 	riskFactors.risk : not_matched
+riskFactors.type : cvc 	FAILED
+5555 	riskFactors.risk : not_checked
+riskFactors.type : cvc 	UNKNOWN
+6666 	No riskFactors returned 	APPROVED
+
 The following bank information can be used to test the Vantiv gateway.
 
 Payment Type = ACH
