@@ -12,9 +12,18 @@ body#en__pagebuilder .en__component {
  * . . .visible in Page Builder. . .
  */
 body#en__pagebuilder .pb-placeholder {
-	color: #888;
-	position: absolute;
-	font-size: .5rem;
+	background: #f5f5f5;
+	color: #999;
+	font-weight: 700;
+	padding: .5rem;
+	text-align: center;
+	width: 100%;
+}
+
+body#en__pagebuilder .pb-placeholder::before {
+	content: "Text Block";
+	display: block;
+	font-size: 1.5rem;
 }
 
 /*. . .and not on the live page. */
