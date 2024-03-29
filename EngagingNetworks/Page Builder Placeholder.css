@@ -20,6 +20,10 @@ body#en__pagebuilder .pb-placeholder {
 	width: 100%;
 }
 
+body#en__pagebuilder .en__placeholder * {
+	font-family: sans-serif;
+}
+
 body#en__pagebuilder .pb-placeholder::before {
 	content: "Text Block";
 	display: block;
