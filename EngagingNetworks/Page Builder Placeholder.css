@@ -1,6 +1,9 @@
 /*
- * EN BUGFIX: If a block has no visible content its height is 0px and
- * PageBuilder's editor won't edit it. So set a min-height for components.
+ * If a block has no visible content its height is 0px and
+ * PageBuilder's editor won't edit it. So set a min-height
+ * for components.
+ *
+ * Credit where credit is due; thanks to Dave Methvin (https://www.linkedin.com/in/davemethvin/).
  */
 body#en__pagebuilder .en__component {
 	min-height: 2rem;
