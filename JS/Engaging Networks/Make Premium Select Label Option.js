@@ -1,5 +1,6 @@
 // Add a valueless option to the size/style select list
-jQuery(document).ready(function() {
+jQuery(() => {
+	// noinspection JSUnusedLocalSymbols
 	window.TEGPObserver = new MutationObserver(function(mutationsList, observer) {
 		if (jQuery('.en__pg select option[value=""]').length === 0) {
 			// noinspection StringLiteralBreaksHTMLJS
