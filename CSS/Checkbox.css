@@ -1,0 +1,31 @@
+input.en__field__input[type="checkbox"] {
+	display : none;
+}
+
+input[type="checkbox"] + .en__field__label {
+	display        : inline-block;
+	padding        : 0 0 0 3rem;
+	vertical-align : top;
+	position       : relative;
+}
+
+input[type="checkbox"] + .en__field__label::before {
+	background    : white;
+	border        : 1px solid black;
+	border-radius : .4rem;
+	content       : " ";
+	display       : block;
+	font-size     : 2rem;
+	height        : 2rem;
+	left          : 0;
+	position      : absolute;
+	text-align    : center;
+	top           : 0;
+	width         : 2rem;
+}
+
+input[type="checkbox"]:checked + .en__field__label::before {
+	background : black;
+	color      : white;
+	content    : "\2713";
+}
