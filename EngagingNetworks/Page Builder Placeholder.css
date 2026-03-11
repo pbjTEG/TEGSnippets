@@ -6,7 +6,7 @@
  * Credit where credit is due; thanks to Dave Methvin (https://www.linkedin.com/in/davemethvin/).
  */
 body#en__pagebuilder .en__component {
-	min-height: 2rem;
+	min-height : 2rem;
 }
 
 /* Add a note for the user using an
@@ -15,25 +15,25 @@ body#en__pagebuilder .en__component {
  * . . .visible in Page Builder. . .
  */
 body#en__pagebuilder .pb-placeholder {
-	background: #f5f5f5;
-	color: #999;
-	font-weight: 700;
-	padding: .5rem;
-	text-align: center;
-	width: 100%;
+	background  : #f5f5f5;
+	color       : #999;
+	font-weight : 700;
+	padding     : .5rem 0;
+	text-align  : center;
+	width       : 100%;
 }
 
 body#en__pagebuilder .en__placeholder * {
-	font-family: sans-serif;
+	font-family : sans-serif;
 }
 
 body#en__pagebuilder .pb-placeholder::before {
-	content: "Text Block";
-	display: block;
-	font-size: 1.5rem;
+	content   : "Text Block";
+	display   : block;
+	font-size : 1.5rem;
 }
 
 /*. . .and not on the live page. */
 body:not(#en__pagebuilder) .pb-placeholder {
-	display: none;
+	display : none;
 }
