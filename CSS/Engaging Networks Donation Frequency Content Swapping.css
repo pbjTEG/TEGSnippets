@@ -1,0 +1,20 @@
+/* donation frequency content swapping */
+body:not(#en__pagebuilder) .recurM,
+body:not(#en__pagebuilder) .recurQ,
+body:not(#en__pagebuilder) .recurSA,
+body:not(#en__pagebuilder) .recurA,
+body:not(#en__pagebuilder) .recurO,
+body:not(#en__pagebuilder) .recurN,
+body:not(#en__pagebuilder) .recurY {
+	display: none;
+}
+
+body:not(#en__pagebuilder):has(input[name="transaction.recurrfreq"][value="MONTHLY"]:checked) .recurM,
+body:not(#en__pagebuilder):has(input[name="transaction.recurrfreq"][value="QUARTERLY"]:checked) .recurQ,
+body:not(#en__pagebuilder):has(input[name="transaction.recurrfreq"][value="SEMI_ANNUAL"]:checked) .recurSA,
+body:not(#en__pagebuilder):has(input[name="transaction.recurrfreq"][value="ANNUAL"]:checked) .recurA,
+body:not(#en__pagebuilder):has(input[name="transaction.recurrfreq"][value="ONE-TIME"]:checked) .recurO,
+body:not(#en__pagebuilder):has(input[name="transaction.recurrpay"][value="N"]:checked) .recurN,
+body:not(#en__pagebuilder):has(input[name="transaction.recurrpay"][value="Y"]:checked) .recurY {
+	display: initial;
+}
