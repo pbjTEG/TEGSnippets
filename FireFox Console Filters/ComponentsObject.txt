@@ -1,1 +1,0 @@
--The Components object is deprecated. it will soon be removed.
