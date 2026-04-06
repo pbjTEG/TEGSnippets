@@ -1,5 +1,6 @@
 *, *::before, *::after {
 	box-sizing : border-box;
+	font       : inherit;
 }
 
 html {
@@ -11,7 +12,6 @@ body {
 }
 
 html, body {
-	font    : inherit;
 	margin  : 0;
 	padding : 0;
 }
@@ -41,4 +41,11 @@ p, li, figcaption {
 
 label {
 	text-wrap : pretty;
+}
+
+@media (prefers-reduced-motion : no-preference) {
+	:has(:target) {
+		scroll-behavior    : smooth;
+		scroll-padding-top : 2rem;
+	}
 }
