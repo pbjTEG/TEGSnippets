@@ -1,8 +1,44 @@
-* {
-	box-sizing: border-box;
+*, *::before, *::after {
+	box-sizing : border-box;
+}
+
+html {
+	color-scheme : dark light;
+}
+
+body {
+	min-height : 100vh;
 }
 
 html, body {
-	margin: 0;
-	padding: 0;
+	font    : inherit;
+	margin  : 0;
+	padding : 0;
+}
+
+header, main, footer,
+section, article {
+	container-type : inline-size;
+}
+
+img, picture, svg, video {
+	display   : block;
+	max-width : 100%;
+}
+
+button {
+	outline-color : transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap : balance;
+}
+
+p, li, figcaption {
+	max-width : 75ch;
+	text-wrap : pretty;
+}
+
+label {
+	text-wrap : pretty;
 }
