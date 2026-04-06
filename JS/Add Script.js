@@ -1,15 +1,15 @@
 (function() {
 	var e = document.createElement('script');
 	e.async = true;
-	e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+	e.src = 'https://domain.name/path/script.js';
 	document.getElementsByTagName('head')[0].appendChild(e);
 }());
 
 (function() {
 	var headElement = document.getElementsByTagName('head')[0],
-	    imports     = ['https://domain.name/path/parsley.min.js',
-	                   'https://domain.name/path/jquery.creditCardValidator.js',
-	                   'https://domain.name/path/jquery.ba-throttle-debounce.min.js'];
+	    imports     = ['https://domain.name/path/script1.js',
+	                   'https://domain.name/path/script2.js',
+	                   'https://domain.name/path/script3.js'];
 
 	for (var importsKey in imports) {
 		var element = document.createElement('script');
