@@ -33,8 +33,3 @@ select,
 	text-align: center;
 	width: 100%;
 }
-
-/* for IE */
-select::-ms-expand {
-	display: none;
-}
