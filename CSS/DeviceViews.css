@@ -1,0 +1,50 @@
+body:not(#en__pagebuilder) .tabletView,
+body:not(#en__pagebuilder) .desktopView {
+	display : none;
+}
+
+@media (min-width : 760px) {
+	body:not(#en__pagebuilder) .mobileView {
+		display : none;
+	}
+
+	body:not(#en__pagebuilder) .tabletView,
+	body:not(#en__pagebuilder) .tabletView.mobileView {
+		display : initial;
+	}
+}
+
+@media (min-width : 900px) {
+	body:not(#en__pagebuilder) .tabletView {
+		display : none;
+	}
+
+	body:not(#en__pagebuilder) .desktopView,
+	body:not(#en__pagebuilder) .desktopView.tabletView {
+		display : initial;
+	}
+}
+
+body#en__pagebuilder .mobileView::before,
+body#en__pagebuilder .tabletView::before,
+body#en__pagebuilder .desktopView::before {
+	background : #f5f5f5;
+	color      : #999;
+	display    : block;
+	font       : 700 1.5rem/1.2 sans-serif;
+	padding    : .5rem;
+	text-align : center;
+	width      : 100%;
+}
+
+body#en__pagebuilder .mobileView::before {
+	content : "Mobile View";
+}
+
+body#en__pagebuilder .tabletView::before {
+	content : "Tablet View";
+}
+
+body#en__pagebuilder .desktopView::before {
+	content : "Desktop View";
+}
