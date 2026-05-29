@@ -1,0 +1,50 @@
+body:not(.elementor-editor-active) .tabletView,
+body:not(.elementor-editor-active) .desktopView {
+	display : none;
+}
+
+@media (min-width : 760px) {
+	body:not(.elementor-editor-active) .mobileView {
+		display : none;
+	}
+
+	body:not(.elementor-editor-active) .tabletView,
+	body:not(.elementor-editor-active) .tabletView.mobileView {
+		display : initial;
+	}
+}
+
+@media (min-width : 900px) {
+	body:not(.elementor-editor-active) .tabletView {
+		display : none;
+	}
+
+	body:not(.elementor-editor-active) .desktopView,
+	body:not(.elementor-editor-active) .desktopView.tabletView {
+		display : initial;
+	}
+}
+
+body.elementor-editor-active .mobileView::before,
+body.elementor-editor-active .tabletView::before,
+body.elementor-editor-active .desktopView::before {
+	background : #f5f5f5;
+	color      : #999;
+	display    : block;
+	font       : 700 1.5rem/1.2 sans-serif;
+	padding    : .5rem;
+	text-align : center;
+	width      : 100%;
+}
+
+body.elementor-editor-active .mobileView::before {
+	content : "Mobile View";
+}
+
+body.elementor-editor-active .tabletView::before {
+	content : "Tablet View";
+}
+
+body.elementor-editor-active .desktopView::before {
+	content : "Desktop View";
+}
