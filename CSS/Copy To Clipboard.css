@@ -1,0 +1,28 @@
+/* see /JS/Copy To Clipboard.js */
+.copyItem {
+	position: relative
+}
+
+.copyItem.copied::after {
+	align-items         : center;
+	animation           : fadeOut 5s;
+	animation-fill-mode : forwards;
+	background          : red;
+	border-radius       : .3rem;
+	color               : white;
+	content             : "Copied!";
+	display             : flex;
+	font-size           : .8rem;
+	inset               : 0;
+	justify-content     : center;
+	position            : absolute;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity : 1;
+	}
+	100% {
+		opacity : 0;
+	}
+}
