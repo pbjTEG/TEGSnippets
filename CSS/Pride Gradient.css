@@ -1,0 +1,16 @@
+.prideGradient {
+	background-image : linear-gradient(
+			to bottom right,
+			#000,
+			#582b1b,
+			#ce3732,
+			#fa8a2d,
+			#fad036,
+			#6db456,
+			#186699,
+			#2c388e,
+			#5f3b8d,
+			#9d4992,
+			#47b4ec
+	);
+}
